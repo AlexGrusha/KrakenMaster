@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwy7ldiguu4sg"]
+
+[ext_resource type="Script" uid="uid://bxj2v4fasjmf" path="res://scripts/boat.gd" id="1_vgmwt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dq1f6"]
+size = Vector2(140, 50)
+
+[node name="Boat" type="CharacterBody2D" unique_id=1371636657]
+script = ExtResource("1_vgmwt")
+
+[node name="body" type="Polygon2D" parent="." unique_id=1268036841]
+color = Color(0.23833647, 0.23833647, 0.23833647, 1)
+polygon = PackedVector2Array(-70, -25, 35, -25, 70, 0, 35, 25, -70, 25, -85, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213941899]
+shape = SubResource("RectangleShape2D_dq1f6")
